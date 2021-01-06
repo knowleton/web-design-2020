@@ -9,7 +9,7 @@
     <base href="${base}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>login</title>
+    <title>源川的login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
@@ -23,7 +23,7 @@
             <div class="row">
                 <!-- Logo & Information Panel-->
                 <div class="col-lg-6">
-                    <div class="info d-flex align-items-center">
+                    <div class="info d-flex align-items-center" style="background: rgb(0, 33, 71)">
                         <div class="content">
                             <div class="logo">
                                 <h1>欢迎登录</h1>
@@ -43,7 +43,7 @@
                                 <div class="form-group">
                                     <input id="login-password" type="password" name="passWord" required data-msg="请输入密码" placeholder="密码" class="input-material">
                                 </div>
-                                <button id="login" type="submit" class="btn btn-primary">登录</button>
+                                <button id="login" type="submit" class="btn btn-dark">登录</button>
                                 <div style="margin-top: -40px;">
                                     <!-- <input type="checkbox"  id="check1"/>&nbsp;<span>记住密码</span>
                                     <input type="checkbox" id="check2"/>&nbsp;<span>自动登录</span> -->
