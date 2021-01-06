@@ -202,7 +202,7 @@
         width: 50%;
     }
     .team-silderr{
-        display: none;
+        /*display: none;*/
 
     }
     /* teach */
@@ -221,7 +221,7 @@
         text-decoration: none;
     }
     .teach-content a:hover{
-        color: none;
+        /*color: none;*/
         text-decoration: none;
     }
     .teach-content .img-content{
@@ -328,21 +328,14 @@
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $('.head-container>ul>li').hover(function () {
-        let now = $(this).children("ul");
+    $('.head-container>ul>li').hover(function(){
+        let now= $(this).children("ul");
 
         now.fadeIn(110);
 
-    }, function () {
+    },function(){
         $(this).children("ul").fadeOut(110);
 
-    })
-    $('.sidebar-group').hover(function(){
-        let now=$(this).children('ul');
-        now.slideDown(200);
-    },function(){
-        let now = $(this).children('ul');
-        now.slideUp(200);
     })
 </script>
 
