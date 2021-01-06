@@ -1,3 +1,9 @@
+package datafilter;
+import entity.*;
+import datafilter.*;
+import filter.*;
+import servelet.*;
+import finder.*;
 import javax.imageio.IIOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -19,9 +25,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
 
-@WebFilter("/index.jsp")
-public class indexDataFilter extends HttpFilter {
-    private static final Logger LOGGER=Logger.getLogger(WelcomeServlet.class.getName());
+@WebFilter("/newslister.jsp")
+public class newslisterDataFilter extends HttpFilter {
+    private static final Logger LOGGER=Logger.getLogger(newslisterDataFilter.class.getName());
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse resp , FilterChain chain) throws ServletException, IOException {
@@ -30,7 +36,7 @@ public class indexDataFilter extends HttpFilter {
         //News news=new News(1,"asd","wesdfvddfsdvcxsdfv",new Date());
         //newsList.add(news);
         //LOGGER.info(String.valueOf(news.id));
-        String sql="select id,title,update_time,content from news ORDER by update_time DESC";
+        String sql="select id,title,content,update_time from news ORDER by update_time DESC";
         //News news=new News(1,"asd","wesdfvddfsdvcxsdfv",new Date());
         //newsList.add(news);
         try(Connection conn = DataSourceUtils.getConnection();

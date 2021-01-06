@@ -1,3 +1,9 @@
+package datafilter;
+import entity.*;
+import datafilter.*;
+import filter.*;
+import servelet.*;
+import finder.*;
 import javax.imageio.IIOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -18,9 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
+
 @WebFilter("/userReEdit.jsp")
 public class userReEditDataFilter extends HttpFilter {
-    private static final Logger LOGGER=Logger.getLogger(WelcomeServlet.class.getName());
+    private static final Logger LOGGER=Logger.getLogger(userReEditDataFilter.class.getName());
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse resp , FilterChain chain) throws ServletException, IOException {

@@ -1,3 +1,10 @@
+package entity;
+import entity.*;
+import datafilter.*;
+import filter.*;
+import servelet.*;
+import finder.*;
+
 import java.util.Date;
 
 public class News {
@@ -29,9 +36,6 @@ public class News {
         return updatetime;
     }
     public String getPhoto(){return photo;}
-
-
-
 
 
 }
